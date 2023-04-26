@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    background-color: #f08a24;
+}
+
+.container h1 {
+    font-size: 20px;
+    font-family: "MesloLGS NF";
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.menu a {
+    color: #FFFFFF;
+    font-family: "Fira Code Medium";
+    font-weight: 500;
+    font-size: 19px;
+    margin-left: .8rem;
+    position: relative;
+}
+.menu a::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    background-color: #FFFFFF;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+.contatos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contatos i {
+    margin-left: .5rem;
+}
+
+.fa-whatsapp {
+    background-color: #00bf00;
+    width: 1.8rem;
+    text-align: center;
+    padding: .2rem;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 25px;
+}
+
+.fa-instagram {
+    background-color: #7d007d;
+    width: 1.8rem;
+    text-align: center;
+    padding: .2rem;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 25px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.sobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
